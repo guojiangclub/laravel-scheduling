@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace iBrand\Scheduling\Schedule;
+namespace iBrand\Scheduling;
 
 /**
  * Class ServiceProvider
