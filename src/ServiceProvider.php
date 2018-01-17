@@ -11,8 +11,15 @@
 
 namespace iBrand\Scheduling\Schedule;
 
+/**
+ * Class ServiceProvider
+ * @package iBrand\Scheduling\Schedule
+ */
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {
+    /**
+     * register
+     */
     public function register()
     {
         $this->app->singleton(ScheduleList::class, function ($app) {

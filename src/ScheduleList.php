@@ -11,20 +11,36 @@
 
 namespace iBrand\Scheduling\Schedule;
 
+/**
+ * Class ScheduleList
+ * @package iBrand\Scheduling\Schedule
+ */
 class ScheduleList
 {
+    /**
+     * @var array
+     */
     protected $list;
 
+    /**
+     * ScheduleList constructor.
+     */
     public function __construct()
     {
         $this->list = [];
     }
 
+    /**
+     * @param $class
+     */
     public function add($class)
     {
         array_push($this->list, $class);
     }
 
+    /**
+     * @return array
+     */
     public function get()
     {
         return $this->list;
