@@ -1,0 +1,31 @@
+{
+  "name": "ibrand/laravel-scheduling",
+  "type": "library",
+  "description": "ibrand's laravel scheduling. Split scheduling to every package.",
+  "keywords": [
+    "ibrand",
+    "laravel scheduling"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "shjchen",
+      "email": "ibrand.sjchen@foxmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "iBrand\\Scheduling\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "iBrand\\Scheduling\\ServiceProvider"
+      ]
+    }
+  }
+}
