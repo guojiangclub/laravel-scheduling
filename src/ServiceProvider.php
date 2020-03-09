@@ -17,6 +17,11 @@ namespace iBrand\Scheduling;
  */
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {
+    public function boot()
+    {
+        $this->app->make(ScheduleHandle::class);
+    }
+
     /**
      * register
      */
