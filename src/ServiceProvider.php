@@ -27,12 +27,12 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton(ScheduleList::class, function ($app) {
-            return new ScheduleList();
-        });
-
         $this->app->singleton(ScheduleHandle::class, function ($app) {
             return new ScheduleHandle($app);
+        });
+
+        $this->app->singleton(ScheduleList::class, function ($app) {
+            return new ScheduleList();
         });
     }
 }
